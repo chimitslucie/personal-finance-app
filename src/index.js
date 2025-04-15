@@ -1,13 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import reportWebVitals from "./reportWebVitals";
+import { HashRouter, Routes, Route } from "react-router-dom";
+import Overview from "./Pages/Overview";
+import Transactions from "./Pages/Transactions";
+import Budgets from "./Pages/Budgets";
+import Pots from "./Pages/Pots";
+import RecurringBills from "./Pages/RecurringBills";
+
 import "./Style/Main.scss";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <HashRouter>
+      <Routes>
+        <Route exact path="/Overviw" element={<Overview />} />
+        <Route exact path="/Transactions" element={<Transactions />} />
+        <Route exact path="/Budgets" element={<Budgets />} />
+        <Route exact path="/Pots" element={<Pots />} />
+        <Route exact path="/RecurringBills" element={<RecurringBills />} />
+      </Routes>
+    </HashRouter>
   </React.StrictMode>
 );
 
