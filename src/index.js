@@ -14,7 +14,7 @@ root.render(
   <React.StrictMode>
     <HashRouter>
       <Routes>
-        <Route exact path="/Overviw" element={<Overview />} />
+        <Route exact path="/" element={<Overview />} />
         <Route exact path="/Transactions" element={<Transactions />} />
         <Route exact path="/Budgets" element={<Budgets />} />
         <Route exact path="/Pots" element={<Pots />} />
