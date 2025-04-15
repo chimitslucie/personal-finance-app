@@ -7,7 +7,6 @@ import Transactions from "./Pages/Transactions";
 import Budgets from "./Pages/Budgets";
 import Pots from "./Pages/Pots";
 import RecurringBills from "./Pages/RecurringBills";
-
 import "./Style/Main.scss";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
